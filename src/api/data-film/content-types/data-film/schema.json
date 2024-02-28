@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "data_films",
+  "info": {
+    "singularName": "data-film",
+    "pluralName": "data-films",
+    "displayName": "DataFilm",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "poster": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
